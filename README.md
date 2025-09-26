@@ -1,10 +1,6 @@
-# QR Code Generator - Ocean Theme
+# QR Code Generator
 
-Website tạo mã QR từ đường link với giao diện chủ đề đại dương.
-
-## Demo
-
-![Screenshot](screenshot.png)
+Website tạo mã QR từ đường link.
 
 ## Hướng dẫn cài đặt
 
