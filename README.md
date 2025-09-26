@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 =======
 # QR Code Generator
 
