@@ -1,62 +1,39 @@
-# QR Code Generator
+# QR Code Generator - Ocean Theme
 
-This project is a simple web application that allows users to input a URL and generate a QR code for that link. The application is built using HTML, CSS, and JavaScript, and utilizes a QR code generation library to create the QR codes.
+Website tạo mã QR từ đường link với giao diện chủ đề đại dương.
 
-## Features
+## Demo
 
-- User-friendly interface for inputting links
-- QR code generation on the fly
-- Responsive design for various devices
+![Screenshot](screenshot.png)
 
-## Getting Started
+## Hướng dẫn cài đặt
 
-To get a local copy up and running, follow these simple steps.
+### 1. Clone repo
 
-### Prerequisites
+```sh
+git clone https://github.com/nguyenvoanhduy/qr-code-generator.git
+cd qr-code-generator
+```
 
-- Node.js and npm installed on your machine.
+### 2. Cài đặt Python và các thư viện
 
-### Installation
+```sh
+pip install flask flask-cors qrcode[pil] pillow
+```
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/qr-code-generator.git
-   ```
+### 3. Chạy server backend
 
-2. Navigate to the project directory:
-   ```
-   cd qr-code-generator
-   ```
+```sh
+python server.py
+```
 
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+### 4. Chạy website frontend
 
-### Usage
+Mở file `src/index.html` bằng Live Server (VS Code) hoặc trình duyệt.
 
-1. Open `src/index.html` in your web browser.
-2. Enter a URL in the input field.
-3. Click the "Generate QR Code" button to create the QR code.
-4. The generated QR code will be displayed on the page.
+> **Lưu ý:**  
+> Nếu frontend và backend chạy khác port, hãy đảm bảo file `app.js` fetch tới đúng địa chỉ backend (mặc định là `http://127.0.0.1:5000/api/qrcode`).
 
-### Built With
+## Tác giả
 
-- HTML
-- CSS
-- JavaScript
-- [qrcode.js](https://github.com/davidshimjs/qrcodejs) - A library for generating QR codes
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+[Nguyen Vo Anh Duy](https://github.com/nguyenvoanhduy)
